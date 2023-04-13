@@ -1,0 +1,69 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: lightsalmon;
+  color: darkmagenta;
+}
+
+h1 {
+  font-size: 3.2rem;
+  padding: 1rem;
+}
+p {
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.mobile {
+  background-color: darkmagenta;
+  color: lightsalmon;
+  display: inline-block;
+  
+}
+.tablet {
+  background-color: blanchedalmond;
+  color: darkolivegreen;
+  display: inline-block;
+  display: none;
+}
+.desktop {
+  
+  background-color: darkgoldenrod;
+  color: lemonchiffon;
+  display: inline-block;
+  display: none;
+}
+
+/* tablet näkymä */
+@media only screen and (min-width: 426px) {
+  body {
+    background-color: darkolivegreen;
+    color: blanchedalmond;
+  }
+  .mobile {
+    display: none;
+  }
+  .tablet {
+    display: inline-block;
+  }
+  .desktop {
+  }
+}
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: lemonchiffon;
+    color: darkgoldenrod;
+  }
+  .mobile {
+  }
+  .tablet {
+    display: none;
+  }
+  .desktop {
+    display: inline-block;
+  }
+
+
+
